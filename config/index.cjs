@@ -42,7 +42,7 @@ const USER_CONFIG = {
     poetry: false,
 
     /** 星座运势 */
-    horoscope: false,
+    horoscope: true,
 
     /** 生日消息和节日消息 */
     birthdayMessage: true,
@@ -55,7 +55,7 @@ const USER_CONFIG = {
 
   // 每日一言的内容类型
   // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: '""',
+  LITERARY_PREFERENCE: '漫画',
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
@@ -87,7 +87,6 @@ const USER_CONFIG = {
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
-        // 在一起的日子
         { keyword: 'love_day', date: '2022-07-31' },
       ],
   /**
@@ -105,8 +104,6 @@ const USER_CONFIG = {
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oj8Ws54tbIFKe1ee5DLkYAGRoyyY',
     }
-    // 你可以不断按格式往下增加
-    // ...
   ],
 
   /**
@@ -139,17 +136,7 @@ const USER_CONFIG = {
    * 删除isShowAge属性，也会不展示岁数
    * --- 是否展示周岁信息结束 ---
    */
-  FESTIVALS: [  {
-      type: '生日', name: '双酱', year: '2000', date: '08-16', isShowAge: true,
-    }
-  ],
 
-  /**
-   * 限制重要节日的展示条目, 需要填写数字;
-   * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
-   * 如果为0, 则默认展示全部
-   */
-  FESTIVALS_LIMIT: 0,
 
   /** 日期相关 */
 
