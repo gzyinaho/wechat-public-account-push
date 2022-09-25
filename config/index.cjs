@@ -101,7 +101,7 @@ const USER_CONFIG = {
   CALLBACK_USERS: [lmh0808l]
     {
       // 一般都填自己
-      name: '自己',
+      name: 'lll',
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oj8Ws54tbIFKe1ee5DLkYAGRoyyY',
     }
@@ -149,7 +149,7 @@ const USER_CONFIG = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 4,
+  FESTIVALS_LIMIT: 0,
 
   /** 日期相关 */
 
@@ -157,11 +157,7 @@ const USER_CONFIG = {
    * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
    * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }}
    * */
-  CUSTOMIZED_DATE_LIST: [
-    // 在一起的日子
-    { keyword: 'love_day', date: '2022-07-31' },
-    // 你可以不断按格式往下增加
-    // ...
+  CUSTOMIZED_DATE_LIST: [{ keyword: 'love_day', date: '2022-07-31' }
   ],
 
   /** 插槽 */
@@ -170,7 +166,7 @@ const USER_CONFIG = {
    * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
    * 比如：keyword: "lover_prattle" ，在测试号中就是 {{ lover_prattle.DATA }}
    * */
-  SLOT_LIST: [
+  SLOT_LIST: [ 'lover_prattle'
     // 这样配置的话，就会每次发送这句话
     { keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
     // 这样配置的话，就会每次随机选一句话发送
