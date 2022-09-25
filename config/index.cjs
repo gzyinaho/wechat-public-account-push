@@ -60,7 +60,7 @@ const USER_CONFIG = {
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
    */
-  USERS: [fws_0816
+  USERS: [fws_0816]
     {
       // 想要发送的人的名字
       name: '双酱',
@@ -83,9 +83,6 @@ const USER_CONFIG = {
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
           type: '生日', name: '双酱', year: '2000', date: '08-16',
-        },
-        {
-          type: '节日', name: '被搭讪纪念日', year: '2022', date: '07-31',
         }
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
@@ -93,124 +90,15 @@ const USER_CONFIG = {
         // 在一起的日子
         { keyword: 'love_day', date: '2022-07-31' },
       ],
-      // 课程表相关配置
-      // 如果courseSchedule不存在或者为空（null）则认为没有课程
-      // 如果courseSchedule是一个数组，则认为不区分单双周，直接填写星期几对应的课表数据即可
-      // 如果courseSchedule是一个对象（如下面所示）
-      courseSchedule: {
-        // 单双周的基准
-        benchmark: {
-          // 这里设置一个日期，用来作为判断课表是否单双周的依据
-          date: '2022-09-23',
-          // 该日期是否为单周
-          isOdd: true
-        },
-        // 课表
-        courses: {
-          // 单周课表
-          // 从星期一到星期日（星期六和星期日的课表数组可不填写）
-          odd: [
-            // 例子，周一的课表
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周二
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周三
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周四
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周五
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周六
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周日
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ]
-          ],
-          // 双周课表
-          even: [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
-          ]
-        }
-      },
-    },
-    {
-      name: '老婆1',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆2',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆3',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    }
-    // 你可以不断按格式往下增加
-    // ...
-  ],
-
   /**
    * 【推送完成提醒】 相关，主要用来展示发送是否成功/失败的数据
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
+  CALLBACK_TEMPLATE_ID: '6li0JJwspvd9hRj44zVFxyI0zrqrX5JWyS4n12oYpXE',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-  CALLBACK_USERS: [lmh0808l
+  CALLBACK_USERS: [lmh0808l]
     {
       // 一般都填自己
       name: '自己',
