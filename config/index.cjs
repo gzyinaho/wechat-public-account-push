@@ -7,12 +7,12 @@ const USER_CONFIG = {
   // 公众号APP_ID
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_ID: 'wx05e9e57dbe6fa550',
+  APP_ID: ' wx05e9e57dbe6fa550 ',
 
   // 公众号APP_SECRET
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_SECRET: '419c833fbd99997f54a68ef738b455c4',
+  APP_SECRET: ' 419c833fbd99997f54a68ef738b455c4 ',
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
@@ -65,9 +65,9 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '双酱',
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oj8Ws554VkwNT6DbFalLQWg52ItE',
+      id: ' oj8Ws554VkwNT6DbFalLQWg52ItE ',
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: '2hnKtviTzqgbY6D72rU8muegWpBCa4k5WZ4yeX5xZj4',
+      useTemplateId: ' 2hnKtviTzqgbY6D72rU8muegWpBCa4k5WZ4yeX5xZj4 ',
       // 所在省份
       province: '浙江',
       // 所在城市
@@ -204,7 +204,7 @@ const USER_CONFIG = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '6li0JJwspvd9hRj44zVFxyI0zrqrX5JWyS4n12oYpXE',
+  CALLBACK_TEMPLATE_ID: ' 6li0JJwspvd9hRj44zVFxyI0zrqrX5JWyS4n12oYpXE ',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -212,7 +212,7 @@ const USER_CONFIG = {
       // 一般都填自己
       name: '自己',
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oj8Ws55ZIBD1auumR5Zlg1ZtIlQw',
+      id: ' oj8Ws55ZIBD1auumR5Zlg1ZtIlQw ',
     }
     // 你可以不断按格式往下增加
     // ...
